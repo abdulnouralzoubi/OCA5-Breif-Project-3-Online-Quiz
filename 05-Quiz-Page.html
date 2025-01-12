@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Page</title>
+    <meta
+      name="description"
+      content="Take a quiz to test your knowledge in various topics."
+    />
+    <link rel="stylesheet" href="05-Quiz-Page.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="burger-menu-btn" aria-label="Open menu">☰</button>
+        <p class="navbar-title">Quiz: <span>Topic</span></p>
+        <div class="nav-right">
+          <span id="username" class="hide-on-small-screens">Username</span>
+          <img
+            src="./images/profile.png"
+            alt="Profile Photo"
+            id="profile-photo"
+          />
+          <div class="dropdown-menu" id="dropdown-menu">
+            <a href="#" id="logout-link">Log Out</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="quiz-section">
+        <div class="quiz-container">
+          <div class="question-container">
+            <h2 class="question-number">Question 1:</h2>
+            <p class="question-text">What is the capital of France?</p>
+          </div>
+          <div class="answers-container">
+            <label class="answer-option">
+              <input type="radio" name="answer" value="A" />
+              <span class="answer-circle">A</span>
+              <span class="answer-text">Berlin</span>
+            </label>
+            <label class="answer-option">
+              <input type="radio" name="answer" value="B" />
+              <span class="answer-circle">B</span>
+              <span class="answer-text">Madrid</span>
+            </label>
+            <label class="answer-option">
+              <input type="radio" name="answer" value="C" />
+              <span class="answer-circle">C</span>
+              <span class="answer-text">Paris</span>
+            </label>
+            <label class="answer-option">
+              <input type="radio" name="answer" value="D" />
+              <span class="answer-circle">D</span>
+              <span class="answer-text">Rome</span>
+            </label>
+          </div>
+          <button id="next-btn" disabled>Next</button>
+          <div class="timer-icon" id="timer-icon">⏰</div>
+          <div class="timer-box" id="timer-box">5:00</div>
+        </div>
+      </section>
+      <aside id="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <!-- <li class="mobile-only"><a href="02-Signup-Page.html">Sign Up</a></li>
+          <li class="mobile-only"><a href="03-Login-Page.html">Login</a></li> -->
+        </ul>
+      </aside>
+    </main>
+    <script src="05-Quiz-Page.min.js"></script>
+  </body>
+</html>

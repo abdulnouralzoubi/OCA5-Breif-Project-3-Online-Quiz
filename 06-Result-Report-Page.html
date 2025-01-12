@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result: Report Page</title>
+    <meta
+      name="description"
+      content="View your quiz results and performance report."
+    />
+    <link rel="stylesheet" href="06-Result-Report-Page.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="burger-menu-btn" aria-label="Open menu">☰</button>
+        <p class="navbar-title">Results</p>
+        <div class="nav-right">
+          <span id="username" class="hide-on-small-screens">Username</span>
+          <img
+            src="./images/profile.png"
+            alt="Profile Photo"
+            id="profile-photo"
+          />
+          <div class="dropdown-menu" id="dropdown-menu">
+            <a href="#" id="logout-link">Log Out</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="result-section">
+        <div class="result-container">
+          <div class="left-half">
+            <h1>Congratulations!</h1>
+            <p>You’ve Successfully <b>Passed</b> the Quiz!</p>
+            <p>Your Score: 3/4</p>
+            <button id="view-answers-btn">View Answers</button>
+          </div>
+          <div class="right-half">
+            <div
+              class="circular-progress"
+              data-inner-circle-color="lightgrey"
+              data-percentage="80"
+              data-progress-color="crimson"
+              data-bg-color="black"
+            >
+              <div class="inner-circle"></div>
+              <p class="percentage">0%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <aside id="sidebar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <!-- <li class="mobile-only"><a href="02-Signup-Page.html">Sign Up</a></li>
+          <li class="mobile-only"><a href="03-Login-Page.html">Login</a></li> -->
+        </ul>
+      </aside>
+    </main>
+    <script src="06-Result-Report-Page.min.js"></script>
+  </body>
+</html>
